@@ -1,4 +1,3 @@
-//Initial state for useReducer using React Hooks
 export const initialState = {
   characters: {
     items: [],

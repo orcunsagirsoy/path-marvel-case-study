@@ -7,12 +7,10 @@ const MarvelAutoComplete = ({ autoSuggestList, onKeyPress }) => {
     const [value, setValue] = useState('')
     const [suggestions, setSuggestions] = useState([])
 
-    //include special characters
     function escapeRegexCharacters(str) {
         return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     }
 
-    //get suggestions basd on user matched user input
     function getSuggestions(value) {
         const escapedValue = escapeRegexCharacters(value.trim());
 
@@ -33,7 +31,6 @@ const MarvelAutoComplete = ({ autoSuggestList, onKeyPress }) => {
         );
     }
 
-    //get input text value from user input
     const onChange = (event, { newValue, method }) => {
         setValue(newValue)
     };
