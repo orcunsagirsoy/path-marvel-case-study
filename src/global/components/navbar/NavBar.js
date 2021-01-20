@@ -40,7 +40,7 @@ const NavBar = ({ autoSuggest, dispatch, setCurrentPage }) => {
     return (
         <header className='bg-black-90 fixed w-100 ph3 pv2 pv3-ns ph4-m ph5-l z-3' id='navbar'>
             <nav className='f6 fw6 tracked flex justify-between items-center flex-wrap '>
-                <a href='https://www.marvel.com/' target='_blank' rel='noopener noreferrer'>
+                <a href='https://www.marvel.com/' target='_blank' rel="noopener noreferrer">
                     <img className='mw3 mw4-ns' src={MarvelLogo} alt={'React Marvel Catalog'}></img>
                 </a>
                 <div className='flex flex-wrap'>

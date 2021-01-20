@@ -42,11 +42,6 @@ function App() {
     setModalShow(false)
   }
 
-  //save My Team to sessionStorage whenever it changes to retain data.
-  useEffect(() => {
-    sessionStorage.setItem('MyTeam', JSON.stringify(characters.myteam));
-  }, [characters.myteam, characters.myteam.length]);
-
   return (
     <Fragment>
       <NavBar
@@ -68,7 +63,6 @@ function App() {
         isComicsLoaded={character.isComicsLoaded}
         dispatch={dispatch}
         info={character}
-        myTeam={characters.myteam}
       />
     </Fragment>
   );
