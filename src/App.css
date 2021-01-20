@@ -20,3 +20,9 @@
 .App-link {
   color: #09d3ac;
 }
+
+body {
+  background: #DC2424; 
+  background: -webkit-linear-gradient(to left,  #bc4040, #5c6dd6); 
+  background: linear-gradient(to left,  #bc4040, #5c6dd6); 
+}
