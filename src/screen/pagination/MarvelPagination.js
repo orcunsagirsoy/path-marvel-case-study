@@ -5,7 +5,7 @@ const MarvelPagination = ({ characterPerPage, totalCharacters, paginate }) => {
   const pageNumbers = [];
   const pageCount = Math.ceil(totalCharacters / characterPerPage);
 
-  //Create a array of the total nuber of page based on total characters
+
   for (let i = 1; i <= pageCount; i++) {
     pageNumbers.push(i);
   }

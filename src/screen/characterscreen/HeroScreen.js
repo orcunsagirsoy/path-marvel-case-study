@@ -10,8 +10,6 @@ const HeroScreen = ({ characters, setModal, dispatch, currentPage, setCurrentPag
     const [characterPerPage] = useState(3);
     const { items } = characters
 
-    //Fetch all characters Comics, and Series during opning of modal
-    //Fetch is attached when character Card is clicked
     const getCharacterComicsStoriesSeries = async (char) => {
 
         setModal(true)
@@ -43,12 +41,12 @@ const HeroScreen = ({ characters, setModal, dispatch, currentPage, setCurrentPag
             console.log(err)
         }
     }
-    // Get current posts
+
     const indexOfLastCharacter = currentPage * characterPerPage;
     const indexOfFirstCharacter = indexOfLastCharacter - characterPerPage;
     const currentPosts = items.slice(indexOfFirstCharacter, indexOfLastCharacter);
 
-    // Change page
+
     const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
     if (characters.isLoading) {
