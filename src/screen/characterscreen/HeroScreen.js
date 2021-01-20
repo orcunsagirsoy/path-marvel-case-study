@@ -8,7 +8,7 @@ import ErrorLogo from '../../assets/images/error404.svg'
 const HeroScreen = ({ characters, setModal, dispatch, currentPage, setCurrentPage }) => {
 
     const [characterPerPage] = useState(3);
-    const { items, myteam } = characters
+    const { items } = characters
 
     //Fetch all characters Comics, and Series during opning of modal
     //Fetch is attached when character Card is clicked
