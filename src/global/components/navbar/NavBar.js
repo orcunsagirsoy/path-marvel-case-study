@@ -4,8 +4,7 @@ import MarvelLogo from '../../../assets/images/marvel-logo.jpg'
 import AutoSuggest from './AutoSuggest'
 
 const NavBar = ({ autoSuggest, dispatch, setCurrentPage }) => {
-
-    //fetch search bar input from MARVEL API
+    
     const fetchfilteredCharacter = async (text) => {
         try {
 
@@ -24,7 +23,6 @@ const NavBar = ({ autoSuggest, dispatch, setCurrentPage }) => {
         }
     }
 
-    //create an array of chracter name on the MARVEL API results
     const suggestList = autoSuggest.map((element) => {
         return { name: element.name }
     })

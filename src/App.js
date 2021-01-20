@@ -10,14 +10,11 @@ import './App.css';
 
 function App() {
 
-  //React States
   const [marvelData, dispatch] = useReducer(reducer, initialState);
   const [currentPage, setCurrentPage] = useState(1);
   const [modalShow, setModalShow] = useState(false);
 
   const { characters, character } = marvelData
-
-  //Mount characters fetched from MARVEL API and set the states
   useEffect(() => {
     const getMarvelCharacters = async () => {
       try {
